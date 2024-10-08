@@ -65,4 +65,12 @@ class PrimeNumberOperationsTest {
         assertTrue(primeOps.isCircularPrime(11));
         assertFalse(primeOps.isCircularPrime(10));
     }
+
+    @Test
+    void testFindPrimesInRangeIncludesEndWhenPrime() {
+        List<Integer> primes = primeOps.findPrimesInRange(10, 13);
+        assertTrue(primes.contains(13));
+        assertEquals(2, primes.size());
+        assertEquals(Arrays.asList(11, 13), primes);
+    }
 }
