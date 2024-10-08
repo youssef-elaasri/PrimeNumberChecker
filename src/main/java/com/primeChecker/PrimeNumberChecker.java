@@ -1,3 +1,5 @@
+package main.java.com.primeChecker;
+
 public class PrimeNumberChecker {
 
     // Vérifie si un nombre est premier
